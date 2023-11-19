@@ -28,7 +28,7 @@ function Main() {
   }, [images]);
 
   return (
-    <section style={generateJSXMeshGradient(20)} className="min-h-screen">
+    <section style={generateJSXMeshGradient(6)} className="min-h-screen">
       <section className="dark:bg-gray-800 min-h-screen">
         <Navbar />
         <div className="container flex flex-col px-6 py-8 mx-auto space-y-6 lg:h-[32rem] lg:py-12 lg:flex-row lg:items-center">
