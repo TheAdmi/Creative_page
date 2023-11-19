@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { generateJSXMeshGradient } from "meshgrad";
 import { CheckCircle, Github } from "react-bootstrap-icons";
 import Navbar from "./Navbar";
 
-// Number of color stops
-const ELEMENTS = 6;
-
 function Main() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [
+  const images = useMemo(() => [
     '/images/Change.jpg',
     '/images/Desire.jpg',
     '/images/Energy.jpg',
@@ -20,7 +17,7 @@ function Main() {
     '/images/Passion.jpg',
     '/images/Search.jpg',
     '/images/Silence.jpg',
-  ];
+  ], []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -31,7 +28,7 @@ function Main() {
   }, [images]);
 
   return (
-    <section style={generateJSXMeshGradient(ELEMENTS)} className="min-h-screen">
+    <section style={generateJSXMeshGradient(20)} className="min-h-screen">
       <section className="dark:bg-gray-800 min-h-screen">
         <Navbar />
         <div className="container flex flex-col px-6 py-8 mx-auto space-y-6 lg:h-[32rem] lg:py-12 lg:flex-row lg:items-center">
@@ -77,7 +74,7 @@ function Main() {
         <div className="fixed inset-x-0 lg:inset-x-auto bottom-6 lg:right-8 xl:right-10 xl:bottom-8">
           <div className="w-40 float-right mr-6 lg:mr-0 p-2 backdrop-blur-sm bg-gray-800/20 hover:bg-gray-800/40 dark:bg-white/20 dark:hover:bg-white/40 shadow-xl rounded-lg sm:p-3">
             <div className="flex flex-wrap items-center justify-between">
-              <a target="_blank" href="https://github.com/TheAdmi" className="flex items-center flex-1 w-0">
+              <a href="https://github.com/TheAdmi" className="flex items-center flex-1 w-0">
                 <Github className="h-6 w-6 text-white"/>
                 <p className="ml-3 font-medium tracking-wide text-white truncate">My github</p>
               </a>
