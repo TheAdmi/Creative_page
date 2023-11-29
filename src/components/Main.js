@@ -74,7 +74,7 @@ function Main() {
         <div className="fixed inset-x-0 lg:inset-x-auto bottom-6 lg:right-8 xl:right-10 xl:bottom-8">
           <div className="w-40 float-right mr-6 lg:mr-0 p-2 backdrop-blur-sm bg-gray-800/20 hover:bg-gray-800/40 dark:bg-white/20 dark:hover:bg-white/40 shadow-xl rounded-lg sm:p-3">
             <div className="flex flex-wrap items-center justify-between">
-              <a href="https://github.com/TheAdmi" className="flex items-center flex-1 w-0">
+              <a href="https://github.com/abdellah-agrm" className="flex items-center flex-1 w-0">
                 <Github className="h-6 w-6 text-white"/>
                 <p className="ml-3 font-medium tracking-wide text-white truncate">My github</p>
               </a>
