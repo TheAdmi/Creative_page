@@ -21,7 +21,7 @@ To run the Creative_page project locally, follow these steps:
 
 1. Clone the GitHub repository:
    ```bash
-   git clone https://github.com/TheAdmi/Creative_page.git
+   git clone https://github.com/abdellah-agrm/Creative_page.git
    ```
 
 2. Navigate to the project directory:
